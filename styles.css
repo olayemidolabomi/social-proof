@@ -13,6 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /* flex-wrap: wrap; */
 }
 
 .sub-container{
@@ -23,6 +24,7 @@
   display: flex;
   font-size: 15px;
   width: 100%;
+  flex-wrap: wrap;
   /* border: 2px solid yellowgreen; */
 }
 .borderbox{
@@ -34,16 +36,20 @@
 .firsthalf{
   width: 50%;
   /* border: 2px solid blue; */
+  
 }
 .firsthalf h1{
   font-size: 55px;
-  width:70%;
+  width:65%;
+  color:hsl(300, 43%, 22%) ;
+  font-weight: bold;
 }
 .firsthalf p{
   margin-top: 30px;
   font-size: 20px;
   width: 70%;
   line-height: 30px;
+  color: hsl(303, 10%, 53%);
 }
 
 
@@ -72,9 +78,13 @@
 .ndside{
   display: flex;
   align-items: center;
-  border: 2px solid black;
+  
   padding: 20px;
   width: 80%;
+   background-color: hsl(300, 24%, 96%);
+     border-radius: 5px;
+     font-weight: bold;
+  
 }
 
 .image-flex{
@@ -85,16 +95,23 @@
 
 .indside{
   display: flex;
-  border: 2px solid black;
+  
   padding: 20px;
   width: 80%;
+   background-color: hsl(300, 24%, 96%);
+  border-radius: 5px;
+  font-weight: bold;
+  
 }
 
 .iindside{
   display: flex;
-  border: 2px solid black;
   padding: 20px;
   width: 80%;
+  background-color: hsl(300, 24%, 96%); 
+  border-radius: 5px;
+  font-weight: bold;
+  
 }
 
 .secondhalf-child2{
@@ -116,7 +133,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* border: 2px solid blue; */
+  
   width: 50%;
 }
 
@@ -125,20 +142,23 @@
 }
 
 .card1{
-  border: 3px solid black;
+  
   padding: 20px;
   font-size: 22px;
+  background-color:hsl(300, 43%, 22%) ;
 }
 .card2{
-  border: 3px solid black;
+  
   padding: 20px;
   font-size: 22px;
+  background-color:hsl(300, 43%, 22%) ;
   
 }
 .card3{
-  border: 3px solid black;
+  
   padding: 20px;
   font-size: 22px;
+  background-color:hsl(300, 43%, 22%) ;
 }
 
 
@@ -147,6 +167,10 @@
 .card2,
 .card3 {
   height: 80%;
+  color: white;
+  border-radius: 10px;
+  font-weight: 10px;
+  margin-bottom: 20px;
 }
 
 .card-parent1,
@@ -164,6 +188,120 @@
 .card-parent3{
   align-items: flex-end;
 }
+.secondhalf p{
+  color:hsl(300, 43%, 22%);
+  
+  
+}
+.text1{
+  font-size: 15px;
+  color: hsl(333, 80%, 67%) ;
+}
+
+@media only screen and (max-width: 1345px) {
+  .firsthalf{
+    width: 100%;
+  }
+
+  .firsthalf h1,
+  .firsthalf p {
+    width: 80%;
+  }
+
+  .secondhalf{
+    width: 100%;
+  }
+
+  .secondhalf-child1{
+    margin-top: 30px;
+  }
+
+  .secondhalf-child2{
+    margin: 30px 0;
+  }
+}
+
+@media only screen and (max-width:1200px) {
+  .container{
+    height: auto;
+  }
+
+  .card1,
+  .card2,
+  .card3{
+    width: 100%;
+    height: max-content;
+  }
+
+  .card-parent1,
+  .card-parent2,
+  .card-parent3{
+    /* border: 2px solid green; */
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .lowersection{
+    flex-direction: column;
+    height: fit-content;
+  }
+}
+@media only screen and (max-width:661px){
+  .secondhalf-child2{
+    justify-content: left;
+
+  }
+  .secondhalf-child3{
+    justify-content: left;
+    
+  }
+  .secondhalf{
+    width: 100%;
+
+  }
+  .indside,
+  .iindside,
+  .ndside{
+    width: 100%;
+  }
+  .sub-container{
+    width: 80%;
+  }
+}
+@media only screen and (max-width:531px){
+  .sub-container{ width: 80%;}
+  .firsthalf h1{font-size: 45px; }
+  .firsthalf  p{font-size: 15px}
+  .card1,
+  .card2,
+  .card3{
+    font-size: 13px;
+  }
+ .secondhalf p{
+  
+  font-size: 8px;
+ }
+}
+ @media only screen and ( max-width:316px){
+  .sub-container{ width: 100%;}
+  .image-flex img{ margin-right:5px;}
+  .lowersection p{ font-size: 10px;}
+  .container{ width: 100%;}
+  .ndside,
+  .indside,
+  .iindside{
+    width: 100%;
+    padding: 5px;
+  }
+  
+ }
+
+
+  /* .lowersection{width: 80%;}
+  .uppersection{width: 80%;} */
+
+
+
 
 
 
